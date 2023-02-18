@@ -26,7 +26,7 @@ export const verify = (token) => {
 };
 
 export const addComment = (comment) => {
-    return axios.post(`${BASE_URL}/comments`, Comment, {
+    return axios.post(`${BASE_URL}/comments`, comment, {
         headers: {Authorization: `Bearer ${localStorage.getItem("authToken")}`}
     });
 };

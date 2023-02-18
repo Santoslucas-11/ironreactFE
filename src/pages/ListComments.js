@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { addComment } from "../api";
 
 function ListComments() {
   const [comments, setComments] = useState([]);
 
-  function addComment(comment) {
-    setComments([...comments, comment]);
-  }
+  
 
   function renderComments() {
     return comments.map((comment, index) => (
@@ -13,11 +12,11 @@ function ListComments() {
     ));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    const author = event.target.elements.author.value;
-    const text = event.target.elements.text.value;
-    addComment({ author, text });
+    const title = event.target.elements.author.value;
+    const description = event.target.elements.text.value;
+    await addComment({ title, description });
     event.target.reset();
   }
 
@@ -27,7 +26,7 @@ function ListComments() {
       <ul>{renderComments()}</ul>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="author">Name:</label>
+          <label htmlFor="title">Title:</label>
           <input type="text" id="author" required />
         </div>
         <div>

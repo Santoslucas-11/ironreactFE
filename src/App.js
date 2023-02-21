@@ -3,7 +3,7 @@ import "./App.css";
 import ListSubjects from "./pages/ListSubjects";
 import ListComments from "./pages/ListComments";
 import SubjectDetail from "./pages/SubjectDetail";
-import CommentsDetail from "./pages/CommentsDetail";
+import AddComment from "./pages/AddComment";
 import Home from "./pages/Home";
 //
 import Signup from "./pages/Signup";
@@ -50,7 +50,7 @@ function App() {
           path="/comments/:commentId"
           element={
             <IsPrivate>
-              <CommentsDetail />
+              <AddComment />
             </IsPrivate>
           }
         />

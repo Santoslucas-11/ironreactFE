@@ -30,3 +30,6 @@ export const addComment = (comment) => {
         headers: {Authorization: `Bearer ${localStorage.getItem("authToken")}`}
     });
 };
+export const getAllComments = () => {
+    return axios.get(`${BASE_URL}/comments`);
+};

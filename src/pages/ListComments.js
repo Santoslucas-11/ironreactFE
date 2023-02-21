@@ -1,50 +1,35 @@
-import React, { useState } from "react";
-import { addComment } from "../api";
+import React, { useState, useEffect } from "react";
+import { getAllComments } from "../api";
+import AddComment from "./AddComment";
 
 function ListComments() {
   const [comments, setComments] = useState([]);
 
-  
-
-  function renderComments() {
-    return comments.map((comment, index) => (
-      <Comment key={index} author={comment.author} text={comment.text} />
-    ));
-  }
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    const title = event.target.elements.author.value;
-    const description = event.target.elements.text.value;
-    await addComment({ title, description });
-    event.target.reset();
-  }
+  useEffect(() => {
+    async function handleGetAllComments() {
+      const response = await getAllComments();
+      setComments(response.data);
+    }
+    handleGetAllComments();
+  }, []);
 
   return (
     <div>
       <h2>Comments</h2>
-      <ul>{renderComments()}</ul>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="title">Title:</label>
-          <input type="text" id="author" required />
-        </div>
-        <div>
-          <label htmlFor="text">Comment:</label>
-          <textarea id="text" required></textarea>
-        </div>
-        <button type="submit">Add Comment</button>
-      </form>
+      <AddComment />
+      <>
+        <ul>
+          {comments.map((comment) => {
+            return (
+              <li key={comment._id}>
+                <h3>{comment.title}</h3>
+                <h3>{comment.description}</h3>
+              </li>
+            );
+          })}
+        </ul>
+      </>
     </div>
   );
 }
-
-function Comment(props) {
-  return (
-    <li>
-      <strong>{props.author}:</strong> {props.text}
-    </li>
-  );
-}
-
 export default ListComments;

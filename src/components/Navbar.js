@@ -31,6 +31,15 @@ function Navbar() {
             <NavLink to="/subjects">Subjects</NavLink>
           </div>
           <div>
+            <NavLink to="/StateshookAndEvents">State Hook And Events</NavLink>
+          </div>
+          <div>
+            <NavLink to="/CondicionalRendering">Condicional Rendering</NavLink>
+          </div>
+          <div>
+            <NavLink to="/ListKey">List and Keys</NavLink>
+          </div>
+          <div>
             <NavLink to="/comments">Commments</NavLink>
           </div>
         </>

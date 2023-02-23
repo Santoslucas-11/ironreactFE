@@ -5,6 +5,9 @@ import ListComments from "./pages/ListComments";
 import SubjectDetail from "./pages/SubjectDetail";
 import AddComment from "./pages/AddComment";
 import Home from "./pages/Home";
+import StateshookAndEvents from "./pages/StateshookAndEvents";
+import CondicionalRendering from "./pages/CondicionalRendering";
+import ListKey from "./pages/ListKey";
 //
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -27,6 +30,30 @@ function App() {
           element={
             <IsPrivate>
               <ListSubjects />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/StateshookAndEvents"
+          element={
+            <IsPrivate>
+              <StateshookAndEvents />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/CondicionalRendering"
+          element={
+            <IsPrivate>
+              <CondicionalRendering />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/ListKey"
+          element={
+            <IsPrivate>
+              <ListKey />
             </IsPrivate>
           }
         />

@@ -37,9 +37,13 @@
 align-items: center;
 }
 
-.tamanhoimagensmateria {
-  width: 450px;
-  height: 300px;
+.tamanhoimagensmateria1 {
+  width: 300px;
+  height: 100px;
+}
+.tamanhoImagem2 {
+  width: 500px;
+  height: 400px;
 
 }
 

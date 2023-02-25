@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import StateshookAndEvents from "./pages/StateshookAndEvents";
 import CondicionalRendering from "./pages/CondicionalRendering";
 import ListKey from "./pages/ListKey";
+import LiftState from "./pages/LiftState";
+import Forms from "./pages/Forms";
+import Routing from "./pages/Routing";
 //
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -50,10 +53,34 @@ function App() {
           }
         />
         <Route
+          path="/LiftState"
+          element={
+            <IsPrivate>
+              <LiftState />
+            </IsPrivate>
+          }
+        />
+        <Route
           path="/ListKey"
           element={
             <IsPrivate>
               <ListKey />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/Forms"
+          element={
+            <IsPrivate>
+              <Forms />
+            </IsPrivate>
+          }
+        />
+        <Route
+          path="/Routing"
+          element={
+            <IsPrivate>
+              <Routing />
             </IsPrivate>
           }
         />

@@ -28,19 +28,29 @@ function Navbar() {
       {loggedUser && (
         <>
           <div>
-            <NavLink to="/subjects">Subjects</NavLink>
+            <NavLink to="/subjects"> Components and Props </NavLink>
           </div>
           <div>
-            <NavLink to="/StateshookAndEvents">State Hook And Events</NavLink>
+            <NavLink to="/StateshookAndEvents"> State Hook And Events </NavLink>
           </div>
           <div>
-            <NavLink to="/CondicionalRendering">Condicional Rendering</NavLink>
+            <NavLink to="/ListKey"> List and Keys </NavLink>
           </div>
           <div>
-            <NavLink to="/ListKey">List and Keys</NavLink>
+            <NavLink to="/CondicionalRendering"> Condicional Rendering </NavLink>
           </div>
           <div>
-            <NavLink to="/comments">Commments</NavLink>
+            <NavLink to="/LiftState"> Lift State </NavLink>
+          </div>
+          <div>
+            <NavLink to="/Forms"> Forms </NavLink>
+          </div>
+          <div>
+            <NavLink to="/Routing"> Routing </NavLink>
+          </div>
+          
+          <div>
+            <NavLink to="/comments"> Commments </NavLink>
           </div>
         </>
       )}

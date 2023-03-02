@@ -51,3 +51,15 @@ align-items: center;
   color: white;
   
 }
+.bruno1{
+display: flex;
+}
+.bruno2{
+  width: 70%;
+}
+.bruno3{
+  width: 3000px;
+}
+.bruno4{
+  width: 5000px;
+}

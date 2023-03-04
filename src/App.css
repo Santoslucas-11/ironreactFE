@@ -26,6 +26,7 @@
   height: 100vh;
 }
 
+
 .materiabody {
   
   background-image: url('https://res.cloudinary.com/dphx1elfv/image/upload/v1677014912/IronReact/backgroud_for_project_ofgcpi.jpg');
@@ -62,4 +63,9 @@ display: flex;
 }
 .bruno4{
   width: 5000px;
+}
+
+.commm{
+display: flex;
+
 }

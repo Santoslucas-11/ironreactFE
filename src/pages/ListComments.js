@@ -29,7 +29,7 @@ function ListComments() {
     <div>
       <AddComment />
       <>
-        <ul>
+        <ul className="commm">
           {comments.map((comment) => {
             return (
               <>
@@ -43,7 +43,7 @@ function ListComments() {
                   p={10}
                   justifyContent={"space-between"}
                   position={"relative"}
-                  bgColor="gray.800"
+                  bgColor="#7161EF"
                   _after={{
                     content: '""',
                     position: "absolute",

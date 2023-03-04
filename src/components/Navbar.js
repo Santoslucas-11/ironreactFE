@@ -34,13 +34,15 @@ function Navbar() {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <>
-      <Stack direction={"row"} spacing={4}>
+    <div>
+    
+      <Stack backgroundColor={"#a0ddff"} direction={"row"} spacing={4}>
         <Box key={"Home"}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <NavLink to="/">
                 <Link
+
                   p={2}
                   href={"#"}
                   fontSize={"sm"}
@@ -221,7 +223,7 @@ function Navbar() {
                         color: linkHoverColor,
                       }}
                     >
-                      {"comments"}
+                      {"Comments"}
                     </Link>
                   </NavLink>
                 </PopoverTrigger>
@@ -292,7 +294,7 @@ function Navbar() {
           )}
         </div>
       </Stack>
-    </>
+      </div>
   );
 }
 export default Navbar;

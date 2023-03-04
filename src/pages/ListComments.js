@@ -10,6 +10,8 @@ import {
   Icon,
   SimpleGrid,
   useColorModeValue,
+  Button,
+  ButtonGroup,
 } from "@chakra-ui/react";
 
 function ListComments() {
@@ -25,15 +27,14 @@ function ListComments() {
 
   return (
     <div>
-      <h2>Comments</h2>
       <AddComment />
       <>
         <ul>
           {comments.map((comment) => {
             return (
               <>
-                <Flex 
-                margin={4}
+                <Flex
+                  margin={4}
                   boxShadow={"lg"}
                   maxW={"640px"}
                   direction={{ base: "column-reverse", md: "row" }}
@@ -80,8 +81,8 @@ function ListComments() {
                       pb={4}
                       textColor={"white"}
                     >
-                    {comment.title}
-                    <p></p>
+                      {comment.title}
+                      <p></p>
                       {comment.description}
                     </chakra.p>
                     <chakra.p
@@ -100,8 +101,6 @@ function ListComments() {
                     </chakra.p>
                   </Flex>
                 </Flex>
-               
-               
               </>
             );
           })}

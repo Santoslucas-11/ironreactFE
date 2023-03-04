@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { BsLinkedin } from "react-icons/bs";
 
 import {
   Box,
@@ -8,11 +9,9 @@ import {
   Image,
   Text,
   Divider,
-  HStack,
   Tag,
   Wrap,
   WrapItem,
-  SpaceProps,
   useColorModeValue,
   Container,
   VStack,
@@ -20,8 +19,8 @@ import {
   Stack,
   VisuallyHidden,
   Button,
-  ButtonProps,
-  Flex,
+  ButtonGroup,
+  HStack,
 } from "@chakra-ui/react";
 
 const SocialButton = ({ children, label, href }) => {
@@ -78,7 +77,7 @@ export const BlogAuthor = (props) => {
   );
 };
 
-const ListSubjects = () => {
+const CondicionalRendering = () => {
   return (
     <>
       <Container maxW={"7xl"} p="12">
@@ -115,7 +114,7 @@ const ListSubjects = () => {
                 />
                 <br></br>
                 <Text fontWeight={"bold"}>Using ternary operators:</Text>
-                
+
                 <p></p>
                 <Image
                   borderRadius="lg"
@@ -192,8 +191,8 @@ const ListSubjects = () => {
             </Text>
           </VStack>
           <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-          <Text fontWeight={"bold"}>Using logical && operator:</Text>
-            
+            <Text fontWeight={"bold"}>Using logical && operator:</Text>
+
             <Image
               className="bruno4"
               borderRadius="lg"
@@ -222,8 +221,29 @@ const ListSubjects = () => {
             align={{ base: "center", md: "center" }}
           >
             <Text>Created and developed By: Bruno & Lucas </Text>
+            <HStack>
+              <ButtonGroup>
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/bruno-ferreira-a68b93265/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Bruno
+                  </a>
+                </Button>
 
-            <Stack direction={"row"} spacing={6}></Stack>
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/lucas-santos-295588247/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Lucas
+                  </a>
+                </Button>
+              </ButtonGroup>
+            </HStack>
           </Container>
         </Box>
       </footer>
@@ -231,4 +251,4 @@ const ListSubjects = () => {
   );
 };
 
-export default ListSubjects;
+export default CondicionalRendering;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-
+import { BsLinkedin } from "react-icons/bs";
 import {
   Box,
   Heading,
@@ -22,6 +22,7 @@ import {
   Button,
   ButtonProps,
   Flex,
+  ButtonGroup,
 } from "@chakra-ui/react";
 
 const SocialButton = ({ children, label, href }) => {
@@ -180,33 +181,35 @@ const ListSubjects = () => {
           </WrapItem>
         </Wrap>
         <div className="bruno1">
-        <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
-          <Text className="bruno2" as="p" fontSize="lg">
-            In this example, we're passing a prop called "text" to the "Button"
-            component with the value "Click me!". In the "Button" component's
-            function, we access this prop by using the "props" argument and then
-            referencing the prop by name: props.text. Props are read-only, which
-            means that a component can't modify its own props. Instead, if a
-            component needs to change its behavior based on its props, it can
-            use conditional logic or pass the props down to child components
-            that can modify their own behavior. Overall, props are a powerful
-            tool in React that allow us to create modular, reusable components
-            that can be customized and combined in many different ways.
-          </Text>
-        </VStack>
-        <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
-                <Image className="bruno3"
-                  borderRadius="lg"
-                  src={
-                    "https://res.cloudinary.com/dphx1elfv/image/upload/v1677183436/IronReact/7_qhfvph.png"
-                  }
-                  alt="some good alt text"
-                  objectPosition="contain"
-                />
-                </Link>
-                </div>
+          <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
+            <Text className="bruno2" as="p" fontSize="lg">
+              In this example, we're passing a prop called "text" to the
+              "Button" component with the value "Click me!". In the "Button"
+              component's function, we access this prop by using the "props"
+              argument and then referencing the prop by name: props.text. Props
+              are read-only, which means that a component can't modify its own
+              props. Instead, if a component needs to change its behavior based
+              on its props, it can use conditional logic or pass the props down
+              to child components that can modify their own behavior. Overall,
+              props are a powerful tool in React that allow us to create
+              modular, reusable components that can be customized and combined
+              in many different ways.
+            </Text>
+          </VStack>
+          <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
+            <Image
+              className="bruno3"
+              borderRadius="lg"
+              src={
+                "https://res.cloudinary.com/dphx1elfv/image/upload/v1677183436/IronReact/7_qhfvph.png"
+              }
+              alt="some good alt text"
+              objectPosition="contain"
+            />
+          </Link>
+        </div>
       </Container>
-      
+
       <footer>
         <Box
           bg={useColorModeValue("gray.50", "gray.900")}
@@ -224,6 +227,29 @@ const ListSubjects = () => {
             <Text>Created and developed By: Bruno & Lucas </Text>
 
             <Stack direction={"row"} spacing={6}></Stack>
+            <HStack>
+              <ButtonGroup>
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/bruno-ferreira-a68b93265/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Bruno
+                  </a>
+                </Button>
+
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/lucas-santos-295588247/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Lucas
+                  </a>
+                </Button>
+              </ButtonGroup>
+            </HStack>
           </Container>
         </Box>
       </footer>

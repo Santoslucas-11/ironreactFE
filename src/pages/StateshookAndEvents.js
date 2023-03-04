@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { BsLinkedin } from "react-icons/bs";
 import {
   Box,
   Heading,
@@ -22,6 +23,7 @@ import {
   ButtonProps,
   Flex,
   Center,
+  ButtonGroup,
 } from "@chakra-ui/react";
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -262,6 +264,29 @@ const StateshookAndEvents = () => {
           >
             <Text>Created and developed By: Bruno & Lucas </Text>
             <Stack direction={"row"} spacing={6}></Stack>
+            <HStack>
+              <ButtonGroup>
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/bruno-ferreira-a68b93265/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Bruno
+                  </a>
+                </Button>
+
+                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                  <a
+                    target={"_blank"}
+                    href="https://www.linkedin.com/in/lucas-santos-295588247/"
+                    rel="noreferrer"
+                  >
+                    Linkedin Lucas
+                  </a>
+                </Button>
+              </ButtonGroup>
+            </HStack>
           </Container>
         </Box>
       </footer>

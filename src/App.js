@@ -11,6 +11,7 @@ import ListKey from "./pages/ListKey";
 import LiftState from "./pages/LiftState";
 import Forms from "./pages/Forms";
 import Routing from "./pages/Routing";
+import Landing from "./pages/Landing";
 //
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
         <Route
           path="/subjects"
           element={

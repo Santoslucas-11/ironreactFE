@@ -260,7 +260,7 @@ const ListKey = () => {
             <Stack direction={"row"} spacing={6}></Stack>
             <HStack>
               <ButtonGroup>
-                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                <Button colorScheme="linkedin" leftIcon={<BsLinkedin />}>
                   <a
                     target={"_blank"}
                     href="https://www.linkedin.com/in/bruno-ferreira-a68b93265/"
@@ -270,7 +270,7 @@ const ListKey = () => {
                   </a>
                 </Button>
 
-                <Button colorScheme="facebook" leftIcon={<BsLinkedin />}>
+                <Button colorScheme="linkedin" leftIcon={<BsLinkedin />}>
                   <a
                     target={"_blank"}
                     href="https://www.linkedin.com/in/lucas-santos-295588247/"

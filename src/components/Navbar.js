@@ -35,23 +35,31 @@ function Navbar() {
 
   return (
     <div>
-    
-      <Stack backgroundColor={"#a0ddff"} direction={"row"} spacing={4}>
+      <Stack
+        backgroundColor={"#a0ddff"}
+        direction={"row"}
+        spacing={4}
+        display="flex"
+        alignItems="center"
+      >
         <Box key={"Home"}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+          <Popover trigger={"hover"} placement={"bottom-starfe"}>
             <PopoverTrigger>
               <NavLink to="/">
                 <Link
-
                   p={2}
                   href={"#"}
                   fontSize={"sm"}
-                  fontWeight={500}
+                  fontWeight={1000}
                   color={linkColor}
-                  _hover={{
-                    textDecoration: "none",
-                    color: linkHoverColor,
-                  }}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                 >
                   {"Home"}
                 </Link>
@@ -66,15 +74,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/subjects">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"Components and Props"}
                     </Link>
@@ -87,15 +99,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/StateshookAndEvents">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                     p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"State Hook And Events"}
                     </Link>
@@ -108,15 +124,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/ListKey">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"List and Keys"}
                     </Link>
@@ -129,15 +149,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/CondicionalRendering">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"Condicional Rendering"}
                     </Link>
@@ -150,15 +174,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/LiftState">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"LiftState"}
                     </Link>
@@ -171,15 +199,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/Forms">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"Forms"}
                     </Link>
@@ -192,15 +224,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/Routing">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"Routing"}
                     </Link>
@@ -213,15 +249,19 @@ function Navbar() {
                 <PopoverTrigger>
                   <NavLink to="/comments">
                     <Link
-                      p={5}
-                      href={"#"}
-                      fontSize={"sm"}
-                      fontWeight={500}
-                      color={linkColor}
-                      _hover={{
-                        textDecoration: "none",
-                        color: linkHoverColor,
-                      }}
+                      p={2}
+                  href={"#"}
+                  fontSize={"sm"}
+                  fontWeight={1000}
+                  color={linkColor}
+                  px={4}
+                  py={2.5}
+                  transition="all 0.2s"
+                  borderRadius="md"
+                  borderWidth="3px"
+                  _hover={{ bg: "#00d7fe" }}
+                  _expanded={{ bg: "blue.400" }}
+                  _focus={{ boxShadow: "outline" }}
                     >
                       {"Comments"}
                     </Link>
@@ -294,7 +334,7 @@ function Navbar() {
           )}
         </div>
       </Stack>
-      </div>
+    </div>
   );
 }
 export default Navbar;
